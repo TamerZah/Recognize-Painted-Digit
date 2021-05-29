@@ -9,16 +9,16 @@
 * Tools
 
 ## Demo:
-   [Video link](https://youtu.be/nWiEWk9BGg4)
+   Video link : [youtu.be](https://youtu.be/nWiEWk9BGg4)
 
 ## Overview : 
 This is an image detection project based on digit recognition using convolution neural network and MNIST dataset.
 
-##The model: 
+## The model: 
 I used in this model the convolution neural network with 3 layers of Conv2D nd 1 hidden layer the dense layer and  output layer, also I used the optimizer adam and loss sparse_categorical_crossentropy which is appropriate for detecting categories also I used dropout to avoid model overfitting and callbacks for early stopping as I set epochs to 30 which will allow the model to continue learning until the accuracy stopped improving, below is the model summary
 
 _________________________________________________
-Layer (type)                 Output Shape              Param #   
+Layer (type)                 Output Shape              Param  
 =================================================
 conv2d (Conv2D)              (None, 26, 26, 32)        320       
 _________________________________________________________________
@@ -45,7 +45,7 @@ _________________________________________________________________
 dropout_3 (Dropout)          (None, 128)               0         
 _________________________________________________________________
 dense_1 (Dense)              (None, 10)                1290      
-=================================================================
+=================================================
 Total params: 110,474
 Trainable params: 110,474
 Non-trainable params: 0
@@ -53,8 +53,8 @@ ________________________________________________________________
 
 ### Note: contain saved model weights file (Saved-Recognized-Painted-Digit-Model.h5)
 
-##Paint screen:
+## Paint screen:
 I used OpenCV and numpy to display black screen for drawing the digit using click mouse events and then applying the model for prediction.
 
-##Tools: 
+## Tools: 
 Python, Keras, OpenCV and MNIST dataset
